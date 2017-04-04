@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+h1, h3{
+    text-align: center;
+}
+.imgOutput {
+ height: 80vh;
+    width: 100vw;
+}
+
+p.background--light {
+    color: black;
+}
+
+p.background--dark {
+    color: white;
+}
+
+p.background--complex {
+    color: gray;
+}
+
+.btn-lg {
+    opacity: 0.5;
+    text-align: center;
+    position: relative;
+    left: 30%;
+
+}
+.btn-primary {
+    background-color: dimgrey!important;
+    border-radius: 32px!important;
+
+}
+.bold {
+   // color: white  ;
+}
+body{
+    margin: 50px;
+    background-color: #272b30;
+}
+.jumbotron {
+    padding: 25px;
+
+}
+
+
+.bold {
+    font-weight: bold;
+}
+img {
+    width: 100%;
+    position: absolute;
+}
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    background-position: center;
+}
+.nasa-logo {
+    width: 30%;
+    height: 30%;
+}
+.img-responsive {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+}
+@media only screen and (min-width : 480px) {
+.btn-primary{
+    position: relative;
+    left: 33.3%;
+}
+}
