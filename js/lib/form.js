@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
     var $msgInput = $('#messageInput');
 
@@ -7,7 +7,7 @@ $(function(){
     var nameValue;
     var messageValue;
 
-    $('#form').on('submit', function(e) {
+    $('#form').on('submit', function (e) {
         e.preventDefault();
         var $this = $(this);
 
@@ -51,7 +51,8 @@ $(function(){
 
             return number;
         }
-        function message(msg){
+
+        function message(msg) {
             msg = $msgInput.val();
             return msg;
         }
@@ -64,13 +65,13 @@ $(function(){
             $msgInput.val('');
             $this.data('clicked', 2)
         }
-        else if ($this.data('clicked')== 2){
+        else if ($this.data('clicked') == 2) {
 
             messageValue = message();
             print();
             console.log(messageValue);
             $('#messageInput').slideUp();
-            $('#messageNextButton').css('background-color', '#B3C95A').text('Message sent').css('font-size', '1.5em');
+            $('#messageNextButton').css('background-color', '#B3C95A').text('Message sent').css('font-size', '1em').css('color', 'black');
         }
 
 

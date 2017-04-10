@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
                    name();
                     var clearText = function(){
                        msgInput.value = '';
-                       msgInput.placeholder = "podaj email";
+                       msgInput.placeholder = "What is your email?";
                     };
 
                     clearText();
@@ -68,15 +68,18 @@ document.addEventListener('DOMContentLoaded', function () {
                         email();
                         var clearText = function () {
                             msgInput.value = '';
-                            msgInput.placeholder = "write a message";
+                            msgInput.placeholder = "Write a message";
                         };
                         clearText();
 
                 } else if (clickCount === 3) {
                     message();
                     print();
-                    msgInput.value = '';
-                    msgInput.placeholder = "Message has been sent";
+                    msgInput.style.visibility = "hidden";
+                    next.style.backgroundColor = "#B3C95A";
+                    next.textContent = "Message has been sent!";
+                    next.classList.add("fade-in-bottom");
+                    next.classList.add("newCenter");
 
 
                 }

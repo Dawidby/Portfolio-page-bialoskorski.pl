@@ -60,7 +60,7 @@ window.scrollTo = (function () {
     var blogLink = document.querySelector('[href="#projects"]');
     blogLink.addEventListener("click", function(event) {
         event.preventDefault();
-        scrollTo(document.getElementById('target').offsetTop);
+        scrollTo(document.getElementById('projects').offsetTop);
     }, false);
 
 

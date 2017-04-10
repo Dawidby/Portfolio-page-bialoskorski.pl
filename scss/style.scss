@@ -1,0 +1,260 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "navbar";
+@import "mediaqueries";
+@import "elements";
+@import "particles";
+
+
+
+
+/**************************************
+             SECTION INTRO
+             BASIC STYLES
+ **************************************/
+//@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: white;
+  }
+}
+
+.blink {
+  animation: blink-caret 1s step-end infinite;
+}
+
+//
+
+
+.slide-up {
+  max-height: 50px;
+  position: relative;
+  left: 135px!important;
+  overflow-y: hidden;
+  -webkit-transition: left 0.5s ease-in-out;
+  -moz-transition: left  0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+.fade-in-bottom {
+  position: relative;
+  left: -135px;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -moz-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.animated .fadeInDown {
+  position: relative;
+  -webkit-animation: fade-in-top 6s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards !important;
+  -moz-animation: fade-in-top 6s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+  animation: fade-in-top 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards !important;
+}
+
+h1 {
+  font: 2.25em gotham;
+  letter-spacing: -1px;
+
+  text-transform: capitalize;
+
+  color: #fc3565;
+  //width: 20em;
+  // width: 24ch;
+  //margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h2 {
+  animation: blink-caret;
+  font: 2em bariolregular;
+  color: #e7e7e7;
+  // width: 10.0em;
+  // width: 24ch;
+  //margin: 2em 1.5em;
+  white-space: nowrap;
+  overflow: visible;
+  &:nth-child(6) {
+    text-transform: uppercase;
+  }
+}
+
+h3 {
+  font: 1.25em gotham, bariolregular;
+  color: navajowhite;
+  white-space: nowrap;
+  overflow: visible;
+  text-transform: uppercase;
+
+}
+
+p {
+  color: #e7e7e7;
+  font: 1em gotham;
+  padding-top: 25px;
+}
+
+body {
+  margin: 0;
+  background: #112233;
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: white
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: white
+  }
+}
+
+.blink {
+  margin-left: 4px;
+  width: 1px;
+  height: 5px;
+  border-left: 1px solid white;
+  -webkit-animation: 1.4s blink step-end infinite;
+  -moz-animation: 1.4s blink step-end infinite;
+}
+
+.logotype {
+  overflow: hidden;
+  height: 350px;
+}
+
+/**************************************
+             SECTION PROJECT
+ **************************************/
+
+.portfolioProjects {
+  font: 2.25em gotham;
+  color: $red;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+#projects {
+  margin-bottom: 50px;
+  img {
+    margin-bottom: 25px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#projects img {
+  margin-bottom: 50px;
+}
+
+.projectCenter {
+  text-align: center;
+  img {
+    width: 80%;
+  }
+
+}
+
+.projectCenter3 {
+  text-align: justify;
+  img {
+    width: 39%;
+
+  }
+}
+
+.secondProject {
+  text-align: center;
+  img {
+    width: 100%;
+
+  }
+}
+
+/**************************************
+             SECTION CONTACT
+ **************************************/
+
+#contact {
+  margin-top: 100px;
+}
+
+.footerLogo {
+  display: block;
+  text-align: center;
+  ul {
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 5px;
+    li {
+      display: inline-block;
+    }
+    float: left;
+    a {
+      font: 0.9em gotham;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  img {
+    width: 20%
+  }
+}
+
+#messageInput {
+  padding-top:0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  font: 1.1em gotham;
+  width: 265px;
+  height: 50px;
+  background: none;
+  border-radius: 7px;
+  color: white;
+  border: 1px solid white;
+}
+
+#messagenextbutton {
+  left: 0;
+  font: 1.1em gotham;
+  color: white;
+  border: none;
+}
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+  color: white;
+}
+
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: white;
+}
+
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: white;
+}
+
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}

@@ -1,0 +1,228 @@
+/**************************************
+     SECTION MEDIAQUERY 480px Iphone 6
+ **************************************/
+
+
+
+@include mQ(480px){
+  .footerLogo {
+    img {
+      width: 50%
+    }
+  }
+  .footerLinks{
+    left: 8px;
+    position: relative;
+    padding-bottom: 60px;
+    font-size: 1.2em;
+  }
+
+  .weirdImage{
+    position: relative;
+    left: 71px;
+  }
+  h1 {
+    font: bold 250% bariolregular;
+  }
+  h2{
+    font: bold 170% bariolregular;
+  }
+  #bottommenu ul img{
+    display: none;
+
+  }
+  .container{
+    .fadeInDown{
+      left: -67px;
+      width: 100%;
+      top: 66px;
+      position: absolute;
+      z-index: 3;
+
+    }
+    .fadeInDown1{
+      left: -26px;
+      width: 112%;
+      top: 3px;
+      position: relative;
+      z-index: 2;
+
+    }
+    .fadeInDown2{
+      left: 35px;
+      width: 112%;
+      top: -347px;
+      position: relative;
+      z-index: 1;
+
+    }
+  }
+  .fadeInDown {
+    -webkit-animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+  .fadeInDown1 {
+    -webkit-animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+  .fadeInDown2 {
+    -webkit-animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+
+}
+
+@-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+
+/**************************************
+ SECTION DESKTOP width at least 1000px
+ **************************************/
+
+@include  maxQ(1000px){
+  html, body {
+    overflow-x: hidden;
+    font-size: 100%;
+  }
+  @include underscore;
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+  div.btn.btn-center{
+    position: relative;
+    left:495px;
+  }
+  .wrapper {
+    background: rgba(0, 0, 0, 0.0);
+
+  }
+ .topmenu {
+  }
+;
+  #bottommenu{
+    left: 200px;
+  }
+  img.img-responsive.center {
+    width: 35%;
+  }
+  div.projectCenter3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 15%;
+    }
+  }
+  .logotype {
+    img{
+      width: 26%;
+      position: absolute;
+    }
+    h1{
+      font-size: 4.5em;
+    }
+
+    .fadeInDown{
+      z-index: 2;
+      top: -78px;
+      left: -17px;
+    }
+    .fadeInDown1{
+      z-index: 1;
+      top: -78px;
+      left: 41px;
+    }
+    .fadeInDown2{
+      top: -78px;
+      left: 101px!important;
+
+
+    }
+  }
+  .fadeInDown {
+    -webkit-animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 1.8s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+  .fadeInDown1 {
+    -webkit-animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+  .fadeInDown2 {
+    -webkit-animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    -moz-animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: fade-in-top 2.2s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+  }
+p {
+  width: 100%;
+}
+  .weirdImage{
+
+  }
+}
+
+
+@include  maxQ(1000px){
+.newCenter {
+  position: relative!important;
+  left: -135px!important;
+
+
+}
+  .footerLogo {
+    ul {
+      width: 1200px;
+      margin: 0 auto;
+    }}
+  .container {
+    img{
+      display: block;
+      color: red;
+    }
+  }
+
+  #bottommenu {
+    opacity: 0.85;
+    background: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 62px;
+
+    .wrapper{
+      padding: 10px 0 0 0;
+      width: 500px;
+    }
+    ul{
+      li{
+        a{
+          font-size: 0.75em;
+          color: #ffffff;
+        }
+
+
+      }
+    }
+
+    .slide-center-out:hover:after
+    {
+      width: 40%;
+      background: #fc3565;
+    }
+
+  }
+
+a:hover{
+    opacity: 1;
+  }
+}

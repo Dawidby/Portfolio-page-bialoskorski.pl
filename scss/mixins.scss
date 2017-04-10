@@ -1,0 +1,86 @@
+
+//mixins
+
+@mixin banner {
+  width: 100%;
+  position: relative;
+  color: white;
+  .banner-content{
+    position: absolute;
+    top:150px;
+    width: 100%;
+    font-size: 1em;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-size: $bannerHeading;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  span.title {
+    font-weight:normal;
+    margin-bottom: 30px;
+  }
+}
+
+@mixin clearfix {
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+@mixin grid($cols, $mgn) {
+  float: left;
+  margin-right: $mgn;
+  margin-bottom: $mgn;
+  width: ((100% - (($cols - 1) *  $mgn)) / $cols);
+  &.nth-child(#{$cols}n){
+  margin-right: 0;
+}
+}
+
+@mixin mQ($arg){
+  @media screen and (max-width: $arg){
+    @content;
+  }
+}
+@mixin maxQ($arg){
+  @media screen and (min-width: $arg){
+    @content;
+  }
+}
+@mixin underscore{
+  .slide-center-out
+  {
+    text-decoration:none;
+    display: inline-block;
+    color: #fffbf7;
+    opacity: 1;
+  }
+  /* add a empty string after the elment with class .slide-center-out  */
+  .slide-center-out:after
+  {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -moz-transition: width .5s ease, background-color .5s ease;
+
+    margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+  }
+
+  /* Change the width and background on hover, aka sliding from the middle to the left and right */
+  .slide-center-out:hover:after
+  {
+    width: 100%;
+    background: #FC3565;
+  }
+}

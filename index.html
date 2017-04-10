@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script src="js/appe.js"></script>
+    <script src="js/particles.js"></script>
 </head>
 <body>
 <div id="particles-js"></div>
 <div class="wrapper">
     <main>
-        <div class="container ">
-            <div class="logotype"><a href="#home"></a>
-                <img src="../img/optimised.svg" alt="underground-sign" class="fadeInDown"/>
-                <img src="../img/vectorpaint-red.svg" alt="underground-sign" class="fadeInDown1"/>
-                <img src="../img/vectorpaint-blue.svg" alt="underground-sign" class="fadeInDown2"/>
+        <div class="container">
+            <div class="logotype"><a href="#" id="home"></a>
+                <img src="../assets/img/optimised.svg" alt="underground-sign" class="fadeInDown"/>
+                <img src="../assets/img/vectorpaint-red.svg" alt="underground-sign" class="fadeInDown1"/>
+                <img src="../assets/img/vectorpaint-blue.svg" alt="underground-sign" class="fadeInDown2"/>
             </div>
             <h1>Dawid Bialoskorski</h1>
             <h2>Front-end Developer<span class="blink"></span></h2>
             <h2>Silesia</h2>
-            <p> A graduate of High-intensity Bootcamp, I combine my education with 4 years commercial experience in
+            <p> A graduate of High-intensity Bootcamp, I combine my education with 2 years commercial experience in
                 CSS3,
                 HTML5,
                 JavaScript, WordPress, and design to produce creative and effective websites for happy clients. I enjoy
@@ -31,7 +33,7 @@
                 the Golf course.
             </p>
             <div class="btn btn-center">
-                <div class="btn-content"><a href="#contact">Contact Me</a></div>
+                <div class="btn-content"><a href="https://github.com/Dawidby">See more</a></div>
             </div>
 
         </div>
@@ -40,7 +42,7 @@
             <h3>NASA APOD API</h3>
             <p>On refresh NASA API picks random date and show picture of the day</p>
             <div class="projectCenter fadeInDown4">
-                <a href="http://dawid.imor.pl/nasa/index.html"><img class="img-responsive center"
+                <a href="../nasa/index.html"><img class="img-responsive center"
                                                                     src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"
                                                                     alt=""></a></div>
             <h3>MAUER THEME</h3>
@@ -48,6 +50,10 @@
             <div class="secondProject"><a href="https://mauer.com.pl"><img class="img-responsive center"
                                                                            src="https://mauer.com.pl/wp-content/uploads/2016/09/Mauer-plytki-ceglane-fullscreen-logo-white.png"
                                                                            alt=""></a></div>
+            <h3>PONG</h3>
+            <p>Classic pong game for 2 players</p>
+            <div class="secondProject"><a href="../pong/index.html"><h3>PONG</h3></a></div>
+            <div class="secondProject"><h3>MORE COMING SOON 😎</h3></div>
         </section>
         <div id="technology">
             <h2 class="portfolioProjects">TECHNOLOGIES</h2>
@@ -72,7 +78,7 @@
             <form action="" id="form">
                 <div class="footerLogo">
                     <div class="input-group">
-                        <input id="messageInput" type="text" class="form-control" autocomplete="off" placeholder="podaj imie">
+                        <input id="messageInput" type="text" class="form-control" autocomplete="off" placeholder="What is your name?">
                         <span class="input-group-btn">
                           <button id="messageNextButton" class="btn btn-center" type="submit">Next</button>
                         </span>
@@ -80,14 +86,16 @@
             </form>
 
 </div>
-<div class="footerCenter"><img src="../img/optimised.svg" alt="underground-sign" class="footerLogotype"/></div>
+<div class="footerCenter"><img src="../assets/img/vectorpaint-red.svg" alt="underground-sign" class="footerLogotype"/>
 
-<ul class="footerLinks">
-    <li><a href="https://github.com/Dawidby">Github</a></li>
-    <li><a href="http://codepen.io/dawidb/">Codepen</a></li>
-    <li><a href="http://dawidby.github.com">Linkedin</a></li>
-    <li><a href="http://dawidby.github.com">Contact</a></li>
-</ul>
+    <ul class="footerLinks">
+        <li><a href="https://github.com/Dawidby">Github</a></li>
+        <li><a href="http://codepen.io/dawidb/">Codepen</a></li>
+        <li><a href="https://www.linkedin.com/in/dawidbialoskorski/">Linkedin</a></li>
+        <li><a href="mailto:dbialoskorski@icloud.com">Contact</a></li>
+    </ul>
+</div>
+
 </div>
 </footer>
 </div>
@@ -102,8 +110,7 @@
         </ul>
     </div>
 </div>
-
-<script src="../js/lib/newform.js"></script>
-
+<script src="js/lib/app.js"></script>
+<script src="js/lib/newform.js"></script>
 </body>
 </html>
